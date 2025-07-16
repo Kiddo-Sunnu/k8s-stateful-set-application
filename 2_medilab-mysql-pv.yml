@@ -8,7 +8,7 @@ spec:
     storage: 4Gi
   accessModes:
     - ReadWriteOnce
-  storageClassName: local-storage
+  storageClassName: local-storage   #local-storage MEANS I HAVE TAKEN OUR EC2 INSTANCE EBS VOLUME
   persistentVolumeReclaimPolicy: Retain
   hostPath:
    path: /tmp/medilab-app-data
